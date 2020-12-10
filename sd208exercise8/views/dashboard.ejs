@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Form Handling</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .fh{
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-light ">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Laravel Explorer
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">   
+                <a  class="nav-link" href="/login">
+                    Logout <span class="sr-only">(current)</span>
+                    <i class="fa fa-sign-out"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="alert alert-primary alert-dismissible m-2 fade show" role="alert">
+    <h4 class="container">Welcome <strong> <%= user.firstname + ' ' + user.lastname %>  </strong></h4>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 p-5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" width="100%" alt="">
+        </div>
+        <div class="col-md-6 jumbotron">
+            <h4 class="mt-5 pt-5 ">Hi <strong> <%= user.firstname %> </strong></h4>
+            <hr>
+            <p>Be part of the community where we share our ideas and problems to have a productive community.</p>
+            <h5>To be updated</h5>
+            <p>We send an email in your email <strong><%= user.email %> </strong>  </p>
+            <button class="btn btn-lg btn-outline-danger px-5 mt-3"> Get Started</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
